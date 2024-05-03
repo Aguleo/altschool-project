@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Kanit", sans-serif;
+    background-color: #141410;
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+  /* @media (max-width: 1280px) {
+    .pt_120 {
+      padding-top: 100px;
+    }
+    .pb_120 {
+      padding-bottom: 100px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .pt_120 {
+      padding-top: 80px;
+    }
+    .pb_120 {
+      padding-bottom: 80px;
+    }
+  }  */
+  /* Reset default margin and padding */
+
+/* Apply styles to the header */
+.header {
+    background-color: #141410; /* Change as per your design */
+    padding: 20px 0; /* Adjust as needed */
+    border-bottom: 1px solid #e0e0e0; /* Change color and style as needed */
+}
+
+/* Center the content within the container */
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-banner-img {
+    background-image: url('../images/banner/banner-bg.png');
+    background-size: cover;
+    background-position: center;
+
+}
+/* Style the logo */
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+#nav {
+    color: #ffffff;
+}
+    /* adding color hover effect */
+#nav:hover {
+    color: #c9f31d;
+}
+/* Style the navigation menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust as needed */
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333333; /* Change color as per your design */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px; /* Adjust spacing as needed */
+    transition: color 0.3s ease;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* Change color as per your design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+}
+
+.menu ul ul li {
+    width: 200px; /* Adjust width as needed */
+}
+
+.menu ul ul li a {
+    padding: 10px;
+}
+
+/* Style the call-to-action button */
+.cta .btn {
+    padding: 10px 20px; /* Adjust size as needed */
+    background-color: #c9f31d; /* Change color as per your design */
+    color: black; /* Change color as per your design */
+    border: none;
+    border-radius: 5px; /* Adjust as needed */
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #6f8610; 
+}
+
+/* Style the menu toggle icon for mobile */
+.menu-toggle {
+    display: none;
+}
+
+
+/* style the about homepage */
+.container1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.right-container .grid-container {
+    float: left;
+}
+.right-container {
+    width: 50%;
+}
+.grid-container {
+    width: 50%;
+}
+.right-container img {
+    width: 80%;
+    padding: 30px 0 0 20px;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px;
+  }
+  
+  /* Banner content styles */
+  .banner-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px; /* Additional padding for extra-large screens */
+  }
+  
+  /* Banner link styles */
+  .banner-link {
+    font-size: 24px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .banner-link:hover {
+    color: #c9f31d; /* Hover color */
+    border-color: #c9f31d; /* Hover border color */
+  }
+  
+  /* Banner heading styles */
+  .banner-heading {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 120%;
+    color: #fff;
+  }
+  
+  /* Banner footer styles */
+  .banner-footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Banner arrow styles */
+  .banner-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Video button styles */
+  .video-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .video-btn:hover {
+    background-color: #c9f31d; /* Hover background color */
+  }
+  
+  /* Banner process styles */
+  .banner-process {
+    font-size: 20px; 
+    color: #fff;
+  }
+  /* marquee styling */
+  .marquee-wrapper {
+    overflow: hidden;
+    height: 90px; 
+    background-color: #c9f31d;
+    padding: auto;
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: marquee 20s linear infinite; 
+    padding: 30px;
+  }
+  
+  .slide {
+    flex-shrink: 0;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+
+    /* styling my about section */
+  }
+  .about_section {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .star_animation {
+    margin-bottom: 30px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .about_text {
+    font-size: 40px;
+    line-height: 2;
+    color: #fff;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* styling the about section */
+  .tablinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 100px;
+    list-style: none;
+  }
+  
+  .tablink {
+    background-color: var(--clr_base);
+    color: var(--clr_title);
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: medium;
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+  }
+  
+  .tablink:hover {
+    cursor: pointer;
+  }
+  .tablink.active {
+    background-color: #c9f31d;
+  }
+  
+  .about_btn,
+  .experience_btn,
+  .education_btn,
+  .skills_btn {
+    background-color: #1d1d1d;
+    color: #fff;
+  }
+
+  /* Tab content styling */
+  .tabcontents {
+    position: relative;
+  }
+  
+  .tabitem {
+    width: 100%;
+    transition: opacity 0.7s, transform 0.7s;
+    z-index: 10;
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+  }
+  
+ .infotab .info-page {
+  float: left;
+  }
+
+  .info-page {
+    padding: 50px;
+  }
+  .p-1 {
+    font-size: 2em;
+    color: #ffffff;
+  }
+  .first-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    margin-top: 40px;
+    grid-gap: 5px;
+  
+  }    
+  .first-grid div {
+    padding: 30px;
+    border: 4px solid transparent;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    width: 350px;
+    height: 120px;
+  }
+  
+.first-grid div a {
+  text-decoration: none;
+}
+  .flex-grid ul {
+    list-style-type: none;
+  }
+.flex-item {
+  display: flex;
+}
+.fab {
+  font-size: 20px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
